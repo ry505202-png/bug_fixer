@@ -1,0 +1,19 @@
+[project]
+name = "nano-agent"
+version = "0.1.0"
+description = "Token-thrifty CLI coding agent routing through Bifrost"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.0.0",
+    "rich>=13.0.0",
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+nano-agent = "agent.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
